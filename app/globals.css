@@ -245,6 +245,17 @@ a:focus {
 .perfectCard {
   position: relative;
   overflow: hidden;
+  text-align: center;
+}
+
+.perfectJoke {
+  max-width: 900px;
+  margin: 8px auto 0;
+}
+
+.perfectControls {
+  max-width: 980px;
+  margin: 8px auto 0;
 }
 
 .fireworks {
