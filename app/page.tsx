@@ -66,7 +66,7 @@ export default function TitlePage() {
   return (
     <main className="page">
       <section className="card" aria-label="Spelling app title and setup">
-        <h1>3rd Grade Spell Trainer 6000</h1>
+        <h1>Spelling Trainer 6000 for 3rd grade</h1>
 
         <div className="uploadBox">
           <h2>Insert words or pick a preset</h2>

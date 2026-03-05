@@ -12,6 +12,10 @@ export default function ResultsPage() {
   useEffect(() => {
     const stored = loadJSON<SessionResults>(STORAGE_KEYS.results);
     if (stored) {
+      if (stored.accuracy === 1) {
+        router.replace("/results/perfect");
+        return;
+      }
       setResults(stored);
       return;
     }

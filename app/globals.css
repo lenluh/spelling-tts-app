@@ -242,6 +242,46 @@ a:focus {
   color: #174466;
 }
 
+.perfectCard {
+  position: relative;
+  overflow: hidden;
+}
+
+.fireworks {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.burst {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  animation: firework 1400ms ease-out infinite;
+  box-shadow:
+    0 -28px 0 0 currentColor,
+    20px -20px 0 0 currentColor,
+    28px 0 0 0 currentColor,
+    20px 20px 0 0 currentColor,
+    0 28px 0 0 currentColor,
+    -20px 20px 0 0 currentColor,
+    -28px 0 0 0 currentColor,
+    -20px -20px 0 0 currentColor;
+}
+
+.b1 { top: 18%; left: 12%; color: #ff4d6d; animation-delay: 0ms; }
+.b2 { top: 22%; left: 78%; color: #4cc9f0; animation-delay: 250ms; }
+.b3 { top: 56%; left: 22%; color: #ffd166; animation-delay: 500ms; }
+.b4 { top: 58%; left: 70%; color: #80ed99; animation-delay: 150ms; }
+.b5 { top: 38%; left: 48%; color: #b388ff; animation-delay: 700ms; }
+
+@keyframes firework {
+  0% { transform: scale(0.2); opacity: 0; }
+  20% { opacity: 1; }
+  100% { transform: scale(1.2); opacity: 0; }
+}
+
 @media (min-width: 768px) {
   .page {
     padding-top: 30px;
